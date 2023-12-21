@@ -1,0 +1,9 @@
+.buttons_general {
+    width: 200px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 5px solid #9632FF;
+    background: transparent;
+    color: #9632FF;
+}

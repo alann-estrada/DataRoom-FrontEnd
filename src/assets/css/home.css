@@ -1,0 +1,40 @@
+main {
+    color: #9632FF !important;
+}
+
+.container_Index {
+    display: grid;
+    grid-gap: 10px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_index * {
+    margin: 10px;
+}
+
+.container_Text {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-top: 20px;
+}
+
+.image_index {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 900px) {
+    .container_Text {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .image_index {
+        margin-top: 50px;
+        margin: auto 10%;
+    }
+}

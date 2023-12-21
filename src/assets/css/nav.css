@@ -1,0 +1,65 @@
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    text-align: center;
+}
+
+.logo-white {
+    filter: invert(77%) sepia(9%) saturate(335%) hue-rotate(161deg) brightness(85%) contrast(92%);
+}
+
+.logo_img {
+    width: 100px;
+    height: 100px;
+    margin-left: 25px;
+}
+
+.changeMode {
+    cursor: pointer;
+}
+
+.nav-links {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-self: center;
+    justify-self: center;
+}
+
+.link {
+    margin: auto 30px;
+    padding: 10px;
+}
+
+.text-dark {
+    color: #212121 !important;
+}
+
+.text-light {
+    color: #fff !important;
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #9632FF;
+    transform: scaleX(0);
+    /* Inicialmente, la línea está oculta */
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+
+.link:hover::before {
+    transform: scaleX(1);
+    /* Al hacer hover, la línea se extiende a lo largo del enlace */
+    transform-origin: left;
+}
+
+@media screen and (max-width: 900px) {
+    nav{
+        grid-template-columns: repeat(1, auto);
+    }
+}
