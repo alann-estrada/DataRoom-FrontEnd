@@ -59,5 +59,6 @@ input[type="password"] {
     .img_form{
         margin-top: 50px;
         margin: auto 10%;
+        width: 200px;
     }
 }

@@ -56,7 +56,7 @@ export function Nav({ user }) {
                     </>
                 )}
                 {/* eslint-disable-next-line */}
-                <a className={!darkMode ? "link text-dark changeMode link" : "link text-light changeMode link"} onClick={() => handleMode()}>Cambiar a Modo {darkMode ? "Claro" : "Oscuro"}</a>
+                <a className={!darkMode ? "link text-dark changeMode link" : "link text-light changeMode link"} onClick={() => handleMode()}>Modo {darkMode ? "Claro" : "Oscuro"}</a>
             </div>
         </nav >
     )
